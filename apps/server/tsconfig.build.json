@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "sourceMap": true,
+    "paths": {
+      "@virtual-office/shared-kernel": [
+        "../../packages/shared-kernel/dist/index"
+      ],
+      "@virtual-office/shared-kernel/*": [
+        "../../packages/shared-kernel/dist/*"
+      ]
+    }
+  },
+  "exclude": ["src/**/*.spec.ts", "src/**/*.test.ts"]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "virtual-office",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm --filter @virtual-office/web dev & pnpm --filter @virtual-office/server dev",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck",
+    "up": "docker compose up --build",
+    "down": "docker compose down --remove-orphans",
+    "migrate": "pnpm --filter @virtual-office/server migrate",
+    "seed": "pnpm --filter @virtual-office/server seed"
+  },
+  "devDependencies": {
+    "@eslint/js": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "globals": "^13.24.0",
+    "typescript-eslint": "^7.0.0"
+  }
+}

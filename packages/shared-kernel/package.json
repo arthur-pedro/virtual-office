@@ -1,0 +1,21 @@
+{
+  "name": "@virtual-office/shared-kernel",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p tsconfig.build.json"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "vite-tsconfig-paths": "^4.2.1",
+    "vitest": "^1.5.0",
+    "@types/node": "^20.11.30"
+  }
+}

@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+*.tsbuildinfo
+
+# Local tooling
+.env
+.env.local
+
+# Docker volumes
+storage/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+apps/*/node_modules
+
+.pnpm-store/
